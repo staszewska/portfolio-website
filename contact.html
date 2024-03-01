@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio - Malgorzata Staszewska-Bui</title>
+    <link rel="icon" href="img/favicon.jpg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/style.production.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <img class="page-header__item" src="img/logo.jpeg" alt="logo" />
+      <nav class="page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem">About me</a>
+          </li>
+          <li role="my-work">
+            <a href="work.html" role="menuitem">My projects</a>
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="contact-me">
+      <div class="contact-me__info">
+        <h1>Malgorzata Staszewska-Bui</h1>
+        <h2>Cologne, Germany</h2>
+        <p>
+          E-mail: <a href="mstaszewska93@gmail.com">mstaszewska93@gmail.com</a>
+        </p>
+        <p>
+          Phone number: <a href="tel:+49 173-83-92-130">0049-173-83-92-130</a>
+        </p>
+        <p><a href="#" target="_blank">Check out some of my code</a></p>
+      </div>
+      <div class="contac-me__form">
+        <h2>Contact me</h2>
+        <form class="contact-form">
+          <label class="standard-label" for="name">Name:</label>
+          <input type="name" id="name" />
+
+          <label class="standard-label" for="contact-email">E-mail:</label>
+          <input type="email" id="contact-email" required />
+
+          <label class="standard-label" for="contact-message">Message:</label>
+          <textarea maxlength="240" id="contact-message" required></textarea>
+
+          <label class="standard-label" for="contact-phone"
+            >Phone number:</label
+          >
+          <input type="tel" id="contact-phone" />
+
+          <input type="submit" value="Send message" />
+        </form>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <h2>Find me on:</h2>
+
+      <div class="social-media">
+        <a href="#" target="_blank">
+          <img src="img/github_icon.svg" alt="gitgub-icon" />
+        </a>
+        <a href="#" target="_blank">
+          <img src="img/linkedin_icon.svg" alt="linkedin-icon" />
+        </a>
+      </div>
+    </footer>
+
+    <script src="js/tota11y.min.js"></script>
+  </body>
+</html>
