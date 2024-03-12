@@ -55,7 +55,31 @@ body {
 
 .navigation-list li {
   display: inline-block;
-  margin-left: 15px 
+  margin-left: 15px;
+}
+
+.navigation-list li a {
+  display: inline-block;
+  margin-left: 15px;
+  text-decoration: none;
+  transition: 0.15s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.navigation-list li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #77529e;
+  transition: 0.15s ease-in-out;
+}
+
+.navigation-list li a:hover:after {
+  width: 100%;
 }
 
 a {
@@ -442,3 +466,4 @@ a:active {
   border: 2px solid #77529e;
 }
 
+/* menu toggle */
