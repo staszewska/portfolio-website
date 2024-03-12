@@ -80,7 +80,12 @@ a:active {
   width: 250px;
   margin-right: 40px;
   border-radius: 50%;
+}
 
+@media all and (max-width: 500px) {
+  .profile__portrait {
+  padding: 40px;
+  }
 }
 
 .page-footer {
