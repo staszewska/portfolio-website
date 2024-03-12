@@ -106,7 +106,7 @@ a:active {
   border-radius: 50%;
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 629px) {
   .profile__portrait {
   padding: 40px;
   }
@@ -132,7 +132,7 @@ a:active {
 
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 629px) {
   .profile {
   display: flex;
   flex-direction: column;
@@ -467,3 +467,37 @@ a:active {
 }
 
 /* menu toggle */
+
+#toggler, label {
+  display: none;
+}
+
+@media screen and (max-width: 629px) {
+  .menu {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out
+  }
+  label {
+    display: inline-flex;
+  }
+  #toggler:checked~ .menu {
+    max-height: 100%;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .navigation-list a {
+margin-bottom: 3px
+  }
+
+
+  .navigation-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    
+  }
+}
