@@ -128,7 +128,7 @@ a:active {
 .profile {
   max-width: 700px;
   margin: 0 auto;
-  padding: 60px 0
+  padding: 60px 0;
 
 }
 
@@ -183,7 +183,7 @@ a:active {
 }
 
 .work-title {
-  padding: 0 20px
+  padding: 0 20px;
 }
 
 
@@ -356,7 +356,7 @@ a:active {
 .berlin-illustration {
   width: 500px;
   height: auto;
-  padding: 30px
+  padding: 30px;
 }
 
 .contact-me {
@@ -400,6 +400,36 @@ a:active {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+ 
+/* .input-wrapper input[type="tel"] +
+.input-wrapper textarea {
+  border: 2px solid blue
+} */
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper input[type="name"], 
+.input-wrapper input[type="email"],
+.input-wrapper input[type="tel"] {
+  margin: 5px 0 5px 0;
+}
+/* 
+.input-wrapper input[type="name"] {
+  margin: 5px 0 5px 0;
+}
+
+.input-wrapper input[type="email"] {
+  margin: 5px 0 5px 0;
+}
+
+.input-wrapper input[type="tel"] {
+  margin: 5px 0 5px 0;
+} */
+
 
 .about-me__details {
   text-align: center;
@@ -472,18 +502,12 @@ a:active {
   border: 2px solid #77529e;
 }
 
-/* menu toggle */
-
-#toggler, label {
-  display: none;
-}
-
 @media screen and (max-width: 629px) {
   .menu {
     width: 100%;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-in-out
+    transition: max-height 0.3s ease-in-out;
   }
   label {
     display: inline-flex;
@@ -495,7 +519,7 @@ a:active {
   }
 
   .navigation-list a {
-margin-bottom: 3px
+    margin-bottom: 3px;
   }
 
 
