@@ -52,5 +52,30 @@ function validateEmail() {
   return true;
 }
 
+function validateMessage() {
+  let value = messageInput.value;
+
+  if (value === "") {
+    showErrorMessage(messageInput, "This field cannot be empty.");
+    return false;
+  }
+
+  showErrorMessage(messageInput, null);
+  return true;
+}
+
 emailInput.addEventListener("input", validateEmail);
 nameInput.addEventListener("input", validateName);
+messageInput.addEventListener("input", validateMessage);
+
+function validateForm() {
+  validateName() && validateEmail() && validateMessage();
+}
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  if (validateForm()) {
+    alert("Success!");
+  }
+});
