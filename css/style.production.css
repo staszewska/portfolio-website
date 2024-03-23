@@ -55,7 +55,31 @@ body {
 
 .navigation-list li {
   display: inline-block;
-  margin-left: 15px 
+  margin-left: 15px;
+}
+
+.navigation-list li a {
+  display: inline-block;
+  margin-left: 15px;
+  text-decoration: none;
+  transition: 0.15s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.navigation-list li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #77529e;
+  transition: 0.15s ease-in-out;
+}
+
+.navigation-list li a:hover:after {
+  width: 100%;
 }
 
 a {
@@ -80,7 +104,12 @@ a:active {
   width: 250px;
   margin-right: 40px;
   border-radius: 50%;
+}
 
+@media all and (max-width: 629px) {
+  .profile__portrait {
+  padding: 40px;
+  }
 }
 
 .page-footer {
@@ -99,7 +128,19 @@ a:active {
 .profile {
   max-width: 700px;
   margin: 0 auto;
-  padding: 60px 0
+  padding: 60px 0;
+
+}
+
+@media all and (max-width: 629px) {
+  .profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  }
 }
 
 .profile-text {
@@ -122,10 +163,12 @@ a:active {
   grid-template-columns: 1fr 1fr 1fr;
   /* grid-template-rows: 300px 300px; */
   grid-gap: 20px;
+  margin: 20px;
 }
 
 .grid__item {
   background-color: rgb(228, 228, 228);
+  padding: 5px 10px 5px 10px;
 }
 
 .grid__item:last-child {
@@ -137,6 +180,10 @@ a:active {
       grid-row-start: 1;
   -ms-grid-row-span: 2;
   grid-row-end: 3;
+}
+
+.work-title {
+  padding: 0 20px;
 }
 
 
@@ -309,7 +356,7 @@ a:active {
 .berlin-illustration {
   width: 500px;
   height: auto;
-  padding: 30px
+  padding: 30px;
 }
 
 .contact-me {
@@ -353,6 +400,36 @@ a:active {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+ 
+/* .input-wrapper input[type="tel"] +
+.input-wrapper textarea {
+  border: 2px solid blue
+} */
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper input[type="name"], 
+.input-wrapper input[type="email"],
+.input-wrapper input[type="tel"] {
+  margin: 5px 0 5px 0;
+}
+/* 
+.input-wrapper input[type="name"] {
+  margin: 5px 0 5px 0;
+}
+
+.input-wrapper input[type="email"] {
+  margin: 5px 0 5px 0;
+}
+
+.input-wrapper input[type="tel"] {
+  margin: 5px 0 5px 0;
+} */
+
 
 .about-me__details {
   text-align: center;
@@ -425,3 +502,32 @@ a:active {
   border: 2px solid #77529e;
 }
 
+@media screen and (max-width: 629px) {
+  .menu {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  label {
+    display: inline-flex;
+  }
+  #toggler:checked~ .menu {
+    max-height: 100%;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .navigation-list a {
+    margin-bottom: 3px;
+  }
+
+
+  .navigation-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    
+  }
+}

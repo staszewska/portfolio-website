@@ -17,25 +17,38 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="./css/style.production.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header class="page-header">
       <img class="page-header__item" src="img/logo.jpeg" alt="logo" />
       <nav class="page-header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a href="index.html" role="menuitem">Home</a>
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem">About me</a>
-          </li>
-          <li role="my-work">
-            <a href="work.html" role="menuitem">My projects</a>
-          </li>
-          <li role="presentation">
-            <a href="contact.html" role="menuitem">Contact</a>
-          </li>
-        </ul>
+        <label for="toggler">
+          <i class="fa fa-bars"></i>
+        </label>
+        <input type="checkbox" id="toggler" name="" />
+        <div class="menu">
+          <ul role="menubar" class="navigation-list">
+            <li role="presentation">
+              <a href="index.html" role="menuitem">Home</a>
+            </li>
+            <li role="presentation">
+              <a href="about.html" role="menuitem">About me</a>
+            </li>
+            <li role="my-work">
+              <a href="work.html" role="menuitem">My projects</a>
+            </li>
+            <li role="presentation">
+              <a href="contact.html" role="menuitem">Contact</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <section class="contact-me">
@@ -53,19 +66,27 @@
       <div class="contac-me__form">
         <h2>Contact me</h2>
         <form class="contact-form">
-          <label class="standard-label" for="name">Name:</label>
-          <input type="name" id="name" />
+          <div class="input-wrapper">
+            <label class="standard-label" for="name">Name:</label>
+            <input type="name" id="name" />
+          </div>
 
-          <label class="standard-label" for="contact-email">E-mail:</label>
-          <input type="email" id="contact-email" required />
+          <div class="input-wrapper">
+            <label class="standard-label" for="contact-email">E-mail:</label>
+            <input type="email" id="contact-email" />
+          </div>
 
-          <label class="standard-label" for="contact-message">Message:</label>
-          <textarea maxlength="240" id="contact-message" required></textarea>
+          <div class="input-wrapper">
+            <label class="standard-label" for="contact-message">Message:</label>
+            <textarea maxlength="240" id="contact-message"></textarea>
+          </div>
 
-          <label class="standard-label" for="contact-phone"
-            >Phone number:</label
-          >
-          <input type="tel" id="contact-phone" />
+          <div class="input-wrapper">
+            <label class="standard-label" for="contact-phone"
+              >Phone number:</label
+            >
+            <input type="tel" id="contact-phone" />
+          </div>
 
           <input type="submit" value="Send message" />
         </form>
@@ -89,5 +110,6 @@
     </footer>
 
     <script src="js/tota11y.min.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
