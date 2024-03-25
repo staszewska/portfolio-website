@@ -502,6 +502,12 @@ a:active {
   border: 2px solid #77529e;
 }
 
+/* menu toggle */
+
+#toggler, label {
+  display: none;
+}
+
 @media screen and (max-width: 629px) {
   .menu {
     width: 100%;
