@@ -5,6 +5,15 @@
 * Browsers: last 2 version
 */
 
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.roboto-slab-<uniquifier> {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
 
 
 * {
@@ -13,25 +22,31 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Roboto Slab", serif;
   font-weight: 400;
   font-size: 16px;
+
 }
+
+
 
 .page-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  font-size: 16px;
+  /* max-width: 600px; */
+  font-size: 18px;
   padding: 20px;
+  margin: 50px 0 0;
   border-bottom: 1px solid black;
 }
 
 .page-header__item {
+
   -webkit-box-flex: 0;
       -ms-flex: 0 1 100px;
           flex: 0 1 100px;
@@ -50,6 +65,12 @@ body {
 }
 
 .navigation-list{
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  /* margin: 50px; */
+
   list-style-type: none;
 }
 
@@ -64,7 +85,7 @@ body {
   text-decoration: none;
   transition: 0.15s ease-in-out;
   position: relative;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .navigation-list li a::after {
@@ -82,12 +103,13 @@ body {
   width: 100%;
 }
 
+
 a {
   color: #77529e;
 }
 
 a:visited {
-  color: #dcb5ff;
+  color: #5a5ba4;
 } 
 
 a:hover, a:focus {
@@ -128,7 +150,7 @@ a:active {
 .profile {
   max-width: 700px;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 100px;
 
 }
 
@@ -139,7 +161,7 @@ a:active {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px;
+  padding: 100px
   }
 }
 
@@ -169,6 +191,7 @@ a:active {
 .grid__item {
   background-color: rgb(228, 228, 228);
   padding: 5px 10px 5px 10px;
+  text-align: center;
 }
 
 .grid__item:last-child {
@@ -217,6 +240,8 @@ a:active {
 
 
 .about-me {
+  padding: 5em;
+  margin: 5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -372,6 +397,11 @@ a:active {
   padding: 30px;
 }
 
+.contact-me__info {
+margin: 8rem;
+text-align: center;
+}
+
 .contact-me__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -434,6 +464,8 @@ a:active {
 .about-me__details {
   text-align: center;
   padding: 0 50px 0 50px;
+  max-width: 600px; 
+  margin: 0 0 4rem 0;
 }
 
 .button {
