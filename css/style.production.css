@@ -192,6 +192,11 @@ a:active {
   background-color: rgb(228, 228, 228);
   padding: 5px 10px 5px 10px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px;
 }
 
 .grid__item:last-child {
@@ -207,6 +212,10 @@ a:active {
 
 .work-title {
   padding: 0 20px;
+}
+
+.work-images {
+  height: 15em;
 }
 
 
