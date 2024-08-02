@@ -261,7 +261,7 @@ a:active {
 
 .about-me {
   padding: 5em;
-  margin: 5em;
+  margin: 5em 5em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -297,6 +297,29 @@ a:active {
   list-style-type: none;
   margin-right: 35px;
   padding-bottom: 20px;
+}
+
+.about-me__title {
+  font-size: 20px;
+}
+
+.about-me__hashtag {
+  font-size: 12px;
+  color: #77529e;
+}
+
+.skills h1 {
+  text-align: center;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  margin: 15px;
 }
 
 @-webkit-keyframes color-change {
