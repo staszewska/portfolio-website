@@ -199,6 +199,11 @@ a:active {
   min-height: 300px;
 }
 
+.grid__item:hover {
+  border: 1px solid #77529e;
+  border-radius: 5px;
+}
+
 /* .grid__item:last-child {
   -ms-grid-column: 3;
       grid-column-start: 3;
