@@ -14,6 +14,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* header */
 
 .basic-navbar {
   display: flex;
@@ -27,5 +28,67 @@ body {
 }
 
 .navbar {
-  padding: 100px 0 0 0 !important
+  padding: 100px 0 0 0 !important;
 }
+
+/* about me section */
+
+.about-me {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 20px
+}
+
+.about-me__title {
+text-align: center;
+font-size: 15px;
+}
+
+.about-me__hashtag {
+text-align: center;
+font-size: 15px;
+color: var(--primary-color);
+}
+
+.about-me__image-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.about-me__image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.github-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.github-container .btn {
+  background-color: var(--primary-color) !important;
+  border: var(--primary-color) !important;
+  margin: 10px
+}
+
+.btn {
+  margin: 15px
+}
+
+.skills {
+  padding-top: 40px;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
