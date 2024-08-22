@@ -1,16 +1,16 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { FaBars } from "react-icons/fa"; // hamburger icon
+import logo from "../img/duck-logo.jpeg";
 
 function Header() {
   return (
     <>
-      <Navbar bg="light" expand="lg" className="navbar">
+      <Navbar expand="lg" className="navbar">
         {/* hamburger menu toggle button */}
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <FaBars />
         </Navbar.Toggle>
-
         <Navbar.Collapse id="basic-navbar-nav" className="basic-navbar">
           <Nav className="mr-auto">
             <Nav.Link className="navbar-link" href="index.html">
