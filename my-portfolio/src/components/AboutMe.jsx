@@ -19,130 +19,154 @@ import { faNetworkWired } from "@fortawesome/free-solid-svg-icons";
 const AboutMe = () => {
   return (
     <section className="about-me">
-      <h1>About Me</h1>
-      <h2 className="about-me__title">
-        ✈️ From Skies to Code Lines: My Journey
-      </h2>
+      <Container>
+        <h1 className="text-center">About Me</h1>
+        <h2 className="about-me__title text-center">
+          ✈️ From Skies to Code Lines: My Journey
+        </h2>
 
-      <div className="about-me__image-container">
-        <img src={myImage} alt="Gosia" className="about-me__image" />
-      </div>
+        <Row className="justify-content-center my-4">
+          <Col xs={12} md={4} className="text-center">
+            <img src={myImage} alt="Gosia" className="about-me__image" />
+          </Col>
+        </Row>
 
-      <div className="about-me__details">
-        <Container>
-          <Row>
-            <Col className="offset-sm-2 col-sm-8 offset-sm-2" sm={6}>
-              <p>
-                I'm Gosia, a former flight attendant with a passion for
-                exploring not just the skies, but also the vast world of
-                technology. While I once ensured passengers' comfort at 30,000
-                feet, I now find my excitement in coding and creating in the
-                digital realm.
-              </p>
-            </Col>
-          </Row>
-        </Container>
+        <Row>
+          <Col md={{ span: 8, offset: 2 }} xs={12}>
+            <p className="about-me__details text-center">
+              I'm Gosia, a former flight attendant with a passion for exploring
+              not just the skies, but also the vast world of technology. While I
+              once ensured passengers' comfort at 30,000 feet, I now find my
+              excitement in coding and creating in the digital realm.
+            </p>
+          </Col>
+        </Row>
 
-        <h4 className="about-me__hashtag">
-          #FromFlightstoCode #WebDeveloperInMaking
-        </h4>
-      </div>
+        <Row className="justify-content-center my-4">
+          <Col xs={12} md={10} lg={8}>
+            <ul className="about-me__points">
+              <li>
+                <strong>Background</strong>: After 5 years in the aviation
+                industry, I pivoted to web development, gaining proficiency in
+                HTML, CSS, JavaScript, React, and Node.js through intensive
+                training and hands-on projects.
+              </li>
+              <li>
+                <strong>Skills</strong>: My transition has honed my
+                problem-solving, creative thinking, and agile project management
+                skills—essential for developing robust full-stack applications.
+              </li>
+              <li>
+                <strong>Focus</strong>: I specialize in full-stack development,
+                creating seamless and dynamic web experiences from front-end to
+                back-end.
+              </li>
+              <li>
+                <strong>Goals</strong>: I'm eager to contribute to innovative
+                projects and teams, leveraging my diverse background to drive
+                creativity and deliver impactful solutions.
+              </li>
+            </ul>
+          </Col>
+        </Row>
 
-      <div className="github-container">
-        <a
-          href="https://github.com/staszewska"
-          className="btn btn-primary"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          See my GitHub Profile
-        </a>
+        <Row className="justify-content-center">
+          <Col xs={12} className="text-center">
+            <h4 className="about-me__hashtag">
+              #FromFlightstoCode #WebDeveloperInMaking
+            </h4>
+          </Col>
+        </Row>
 
-        <a
-          href="/path_to_your_cv.pdf"
-          className="btn btn-primary"
-          download="Gosia_CV.pdf"
-        >
-          Download My CV
-        </a>
-      </div>
+        <Row className="justify-content-center my-4">
+          <Col xs={12} md={6} className="text-center">
+            <div className="github-container">
+              <a
+                href="https://github.com/staszewska"
+                className="btn btn-primary m-2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                See my GitHub Profile
+              </a>
 
-      <div className="skills">
-        <h1>Skills</h1>
-        <ul className="skills-list list-unstyled">
-          <li>
-            <span className="btn btn-light">
-              <FontAwesomeIcon icon={faReact} /> React
-            </span>
-          </li>
-          <li>
-            <span className="btn btn-light">
-              <FontAwesomeIcon icon={faAngular} /> Angular
-            </span>
-          </li>
-          <li>
-            <span className="btn btn-light">
-              <FontAwesomeIcon icon={faJs} /> JavaScript
-            </span>
-          </li>
-          <li>
-            <span className="btn btn-light">
-              <FontAwesomeIcon icon={faBootstrap} /> React-Bootstrap
-            </span>
-          </li>
-          <li>
-            <span className="btn btn-light">
-              <FontAwesomeIcon icon={faNode} /> NodeJS
-            </span>
-          </li>
-          <li>
-            <span className="btn btn-light">
-              <FontAwesomeIcon icon={faJs} /> Express
-            </span>
-          </li>
-          <li>
-            <span className="btn btn-light">MongoDB</span>
-          </li>
-          <li>
-            <span className="btn btn-light">
-              <FontAwesomeIcon icon={faNetworkWired} /> REST API
-            </span>
-          </li>
-          <li>
-            <span className="btn btn-light">
-              <FontAwesomeIcon icon={faNode} /> Mongoose
-            </span>
-          </li>
-          <li>
-            <span className="btn btn-light">
-              <FontAwesomeIcon icon={faFirefox} /> FireStoreDB
-            </span>
-          </li>
-          <li>
-            <span className="btn btn-light">
-              <FontAwesomeIcon icon={faSass} /> SASS
-            </span>
-          </li>
-          <li>
-            <span className="btn btn-light">
-              <FontAwesomeIcon icon={faGit} /> GIT
-            </span>
-          </li>
-          <li>
-            <span className="btn btn-light">
-              <FontAwesomeIcon icon={faHtml5} /> HTML
-            </span>
-          </li>
-          <li>
-            <span className="btn btn-light">
-              <FontAwesomeIcon icon={faCss3Alt} /> CSS
-            </span>
-          </li>
-          <li>
-            <span className="btn btn-light">jQuery</span>
-          </li>
-        </ul>
-      </div>
+              <a
+                href="/path_to_your_cv.pdf"
+                className="btn btn-secondary m-2"
+                download="Gosia_CV.pdf"
+              >
+                Download My CV
+              </a>
+            </div>
+          </Col>
+        </Row>
+
+        <Row className="justify-content-center">
+          <Col xs={12} md={10} lg={8}>
+            <div className="skills text-center">
+              <h1>Skills</h1>
+              <ul className="skills-list list-unstyled d-flex flex-wrap justify-content-center">
+                <li>
+                  <span className="btn btn-light m-2">
+                    <FontAwesomeIcon icon={faReact} /> React
+                  </span>
+                </li>
+                <li>
+                  <span className="btn btn-light m-2">
+                    <FontAwesomeIcon icon={faAngular} /> Angular
+                  </span>
+                </li>
+                <li>
+                  <span className="btn btn-light m-2">
+                    <FontAwesomeIcon icon={faJs} /> JavaScript
+                  </span>
+                </li>
+                <li>
+                  <span className="btn btn-light m-2">
+                    <FontAwesomeIcon icon={faBootstrap} /> React-Bootstrap
+                  </span>
+                </li>
+                <li>
+                  <span className="btn btn-light m-2">
+                    <FontAwesomeIcon icon={faNode} /> NodeJS
+                  </span>
+                </li>
+                <li>
+                  <span className="btn btn-light m-2">MongoDB</span>
+                </li>
+                <li>
+                  <span className="btn btn-light m-2">
+                    <FontAwesomeIcon icon={faNetworkWired} /> REST API
+                  </span>
+                </li>
+                <li>
+                  <span className="btn btn-light m-2">
+                    <FontAwesomeIcon icon={faSass} /> SASS
+                  </span>
+                </li>
+                <li>
+                  <span className="btn btn-light m-2">
+                    <FontAwesomeIcon icon={faGit} /> Git
+                  </span>
+                </li>
+                <li>
+                  <span className="btn btn-light m-2">
+                    <FontAwesomeIcon icon={faHtml5} /> HTML
+                  </span>
+                </li>
+                <li>
+                  <span className="btn btn-light m-2">
+                    <FontAwesomeIcon icon={faCss3Alt} /> CSS
+                  </span>
+                </li>
+                <li>
+                  <span className="btn btn-light m-2">jQuery</span>
+                </li>
+              </ul>
+            </div>
+          </Col>
+        </Row>
+      </Container>
     </section>
   );
 };
