@@ -34,61 +34,106 @@ body {
 /* about me section */
 
 .about-me {
-  display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 40px;
-    font-size: 20px
+  padding: 5rem;
+  color: #333;
+}
+
+.about-me h1, h2 {
+  color: #333;
+  margin-bottom: 1rem;
 }
 
 .about-me__title {
-text-align: center;
-font-size: 15px;
-}
-
-.about-me__hashtag {
-text-align: center;
-font-size: 15px;
-color: var(--primary-color);
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: var(--primary-color)
 }
 
 .about-me__image-container {
   text-align: center;
-  margin: 20px 0;
+  margin-bottom: 2rem;
 }
 
 .about-me__image {
-  width: 200px;
-  height: 200px;
   border-radius: 50%;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
 }
 
-.github-container{
-  display: flex;
-  flex-direction: column;
+.about-me__details {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-me__points {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: left;
+  font-size: 20px;
+}
+
+.about-me__points li {
+  margin-bottom: 1rem;
+}
+
+.github-container {
+  text-align: center;
+  margin-top: 2rem;
 }
 
 .github-container .btn {
-  background-color: var(--primary-color) !important;
-  border: var(--primary-color) !important;
-  margin: 10px
-}
-
-.btn {
-  margin: 15px
+  margin: 0 10px;
 }
 
 .skills {
-  padding-top: 40px;
+  text-align: center;
 }
 
 .skills-list {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-list li {
+  margin: 5px;
+}
+
+.skills-list .btn {
+  border-radius: 30px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 20px;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+}
+
+.skills-list li {
+  list-style: none;
+}
+
+.about-me__image {
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-me__image:hover {
+  transform: scale(1.05);
+}
+
+.btn {
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: var(--primary-color) !important;
+  color: #fff;
+  transform: translateY(-2px);
 }
 
 
