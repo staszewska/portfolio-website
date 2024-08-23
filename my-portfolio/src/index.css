@@ -136,4 +136,10 @@ body {
   transform: translateY(-2px);
 }
 
+/* social media */
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
 
