@@ -138,8 +138,29 @@ body {
 
 /* social media */
 
-.social-media {
+.page-footer {
   display: flex;
   justify-content: center;
 }
 
+/* main page */
+
+.profile__portrait {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin: 20px
+}
+
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.main-page {
+  padding: 6rem 0 6rem;
+  font-size: 1.5rem;
+}
