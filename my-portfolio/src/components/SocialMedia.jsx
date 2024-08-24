@@ -9,7 +9,7 @@ function Header() {
       <footer className="page-footer">
         <Container>
           <Row>
-            <Col md={{ span: 2, offset: 5 }} xs={12}>
+            <Col md={{ span: 2, offset: 5 }} xs={12} className="text-center">
               <h2>Find me on:</h2>
               <div className="social-media">
                 <a
