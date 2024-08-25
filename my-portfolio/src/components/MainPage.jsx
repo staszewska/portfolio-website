@@ -11,17 +11,22 @@ function MainPage() {
       <Header />
       <Container>
         <Row className="main-page">
-          <Col s={12} lg={{ span: 3, offset: 3 }} className="text-center">
-            <div className="profile">
-              <img
-                src={portfolioPicture}
-                className="profile__portrait"
-                alt="Lisa Gringl Portrait"
-              />
-            </div>
+          <Col
+            md={{ span: 6, offset: 0 }}
+            lg={{ span: 5, offset: 1 }}
+            xl={{ span: 4, offset: 1 }}
+            className="text-center"
+          >
+            {/* <div className="profile"> */}
+            <img
+              src={portfolioPicture}
+              className="profile__portrait"
+              alt="Lisa Gringl Portrait"
+            />
+            {/* </div> */}
           </Col>
 
-          <Col lg={3}>
+          <Col md={6} lg={5} xl={4}>
             <div className="profile-text text-center">
               <h1>Hello World!</h1>
               <p>
