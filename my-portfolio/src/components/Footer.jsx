@@ -3,7 +3,7 @@ import linkedinIcon from "../img/linkedin_icon.svg";
 import githubIcon from "../img/github_icon.svg";
 import { Row, Col } from "react-bootstrap";
 
-function SocialMedia() {
+function Footer() {
   return (
     <>
       <footer className="page-footer">
@@ -33,4 +33,4 @@ function SocialMedia() {
   );
 }
 
-export default SocialMedia;
+export default Footer;
