@@ -1,14 +1,10 @@
 import React from "react";
-import Header from "../components/Header";
-import SocialMedia from "../components/SocialMedia";
 import portfolioPicture from "../img/portfolio-picture.jpeg";
-
 import { Container, Row, Col } from "react-bootstrap";
 
 function MainPage() {
   return (
     <>
-      <Header />
       <Container>
         <Row className="main-page">
           <Col
@@ -38,8 +34,6 @@ function MainPage() {
           </Col>
         </Row>
       </Container>
-
-      <SocialMedia />
     </>
   );
 }

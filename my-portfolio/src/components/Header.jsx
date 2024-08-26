@@ -1,7 +1,6 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { FaBars } from "react-icons/fa"; // hamburger icon
-import logo from "../img/duck-logo.jpeg";
 
 function Header() {
   return (

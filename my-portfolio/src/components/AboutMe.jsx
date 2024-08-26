@@ -15,7 +15,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faNetworkWired } from "@fortawesome/free-solid-svg-icons";
 import Header from "./Header";
-import SocialMedia from "../components/SocialMedia";
+import SocialMedia from "./Footer";
 
 const AboutMe = () => {
   return (
@@ -173,8 +173,6 @@ const AboutMe = () => {
           </Row>
         </Container>
       </section>
-
-      <SocialMedia />
     </>
   );
 };
